@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('flight.jpg');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div style="text-align:center">
+   <center> <h2>Contact Us</h2></center>
+    <p>If you have any problems with the iTicket, leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="support.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="fname">E-mail</label>
+        <input type="text" id="fname" name="E-mail" placeholder="Your e-mail..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+           <option value="adana">Adana</option>
+           <option value="adıyaman">Adıyaman</option>
+           <option value="afyonkarahisar">Afyonkarahisar</option>
+           <option value="ağrı">Ağrı</option>
+           <option value="amasya">Amasya</option>
+           <option value="ankara">Ankara</option>
+            <option value="antalya">Antalya</option>
+          <option value="artvin">Artvin</option>
+          <option value="aydın">Aydın</option>
+          <option value="balıkesir">Balıkesir</option>
+          <option value="bilecik">Bilecik</option>
+          <option value="bingöl">Bingöl</option>
+          <option value="bitlis">Bitlis</option>
+          <option value="bolu">Bolu</option>
+          <option value="burdur">Burdur</option>
+           <option value="bursa">Bursa</option>
+           <option value="çanakkale">Çanakkale</option>
+            <option value="çankırı">Çankırı</option>
+            <option value="çorum">Çorum</option>
+            <option value="denizli">Denizli</option>
+            <option value="diyarbakır">Diyarbakır</option>
+            <option value="edirne">Edirne</option>
+            <option value="erzincan">Erzincan</option>
+            <option value="erzurum">Erzurum</option>
+            <option value="eskişehir">Eskişehir</option>
+            <option value="gaziantep">Gaziantep</option>
+            <option value="giresun">Giresun</option>
+            <option value="gümüşhane">Gümüşhane</option>
+            <option value="hakkari">Hakkari</option>
+            <option value="hatay">Hatay</option>
+             <option value="ısparta">Isparta</option>
+             <option value="mersin">Mersin</option>
+             <option value="istanbul">İstanbul</option>
+              <option value="izmir">İzmir</option>
+               <option value="kars">Kars</option>
+              <option value="kastamonu">Kastamonu</option>
+             <option value="kayseri">Kayseri</option>
+              <option value="kırklareli">Kırklareli</option>
+               <option value="kırşehir">Kırşehir</option>
+                <option value="kocaeli">Kocaeli</option>
+               <option value="konya">Konya</option>
+                <option value="kütahya">Kütahya</option>
+               <option value="malatya">Malatya</option>
+                <option value="manisa">Manisa</option>
+               <option value="kahramanmaraş">Kahramanmaraş</option>
+                <option value="mardin">Mardin</option>
+             <option value="muğla">Muğla</option>
+              <option value="muş">Muş</option>
+               <option value="nevşehir">Nevşehir</option>
+                <option value="niğde">Niğde</option>
+                 <option value="ordu">Ordu</option>
+                <option value="rize">Rize</option>
+                 <option value="sakarya">Sakarya</option>
+                  <option value="samsun">Samsun</option>
+                 <option value="siirt">Siirt</option>
+                  <option value="sinop">Sinop</option>
+                   <option value="sivas">Sivas</option>
+                    <option value="tekirdağ">Tekirdağ</option>
+                     <option value="tokat">Tokat</option>
+                      <option value="trabzon">Trabzon</option>
+                       <option value="tunceli">Tunceli</option>
+                        <option value="şanlıurfa">Şanlıurfa</option>
+                         <option value="uşak">Uşak</option>
+                          <option value="van">Van</option>
+                           <option value="yozgat">Yozgat</option>
+                            <option value="zonguldak">Zonguldak</option>
+                             <option value="aksaray">Aksaray</option>
+                              <option value="bayburt">Bayburt</option>
+                               <option value="karaman">Karaman</option>
+                                <option value="kırıkkale">Kırıkkale</option>
+                                 <option value="batman">Batman</option>
+                                  <option value="şırnak">Şırnak</option>
+                                   <option value="bartın">Bartın</option>
+                                    <option value="ardahan">Ardahan</option>
+                                     <option value="ığdır">Iğdır</option>
+                                     <option value="yalova">Yalova</option>
+                                      <option value="karabük">Karabük</option>
+                                       <option value="kilis">Kilis</option>
+                                        <option value="osmaniye">Osmaniye</option>
+                                         <option value="düzce">Düzce</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <button onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+  alert("Your message has been sent.");
+}
+</script>
+<a href="home.html">  
+       Back  
+     </a> 
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
